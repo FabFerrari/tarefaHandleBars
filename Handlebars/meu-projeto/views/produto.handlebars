@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{produto.garrafa}} - Detalhes</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>{{produto.garrafa}}</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="garrafa-detalhes">
+            <img src="{{garrafa.imagem}}" alt="{{garrafa.nome}}">
+            <div class="desc">
+                <h2>{{garrafa.nome}}</h2>
+                <p>{{garrafa.descricao}}</p>
+                <p>Preço: R$ {{garrafa.preco}}</p>
+                <a href="/comprar/{{garrafa.id}}">Comprar</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2023 as garrafas
+    </footer>
+</body>
+</html>
